@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX UI Design</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imagenes/home/Logotipo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="">Servicios</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../paginas/desarrollo.html">Desarrollo a medida</a></li>
+                        <li><a href="../paginas/consultoria.html">Consultoría tecnológica</a></li>
+                        <li><a href="../paginas/uxuidesign.html">UX/UI Design</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="">Proyectos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../paginas/proyectos.html">Portafolio</a></li>
+                        <li><a href="../paginas/cotiza.html">Cotiza tu proyecto</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="">Nosotros</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../paginas/historia.html">Historia</a></li>
+                        <li><a href="../paginas/equipo.html">Equipo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="contact-button">Contáctanos</a></li>              
+            </ul>              
+        </nav>
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>UX/UI Design</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="cta-buttons">
+                    <button class="primary-button">Cotiza tu proyecto</button>
+                    <button class="secondary-button">Ver portafolio</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../imagenes/UXUI design/Video.png" width="560" height="315" alt="">
+            </div>
+            
+        </section>
+        <!-- section 2 servicios -->
+        <section id="services">
+            <h2>Servicios de UX/UI Design</h2>
+            <div class="services-content">
+                <article>                    
+                    <img src="../imagenes/UXUI design/ui.png" height="130" alt="Diseño de interfaces">
+                    <h3>Diseño de interfaces</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+                <article>
+                    <img src="../imagenes/UXUI design/ux.png" height="130" alt="Experiencia de usuario">
+                    <h3>Experiencia de usuario</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+                <article>
+                    <img src="../imagenes/UXUI design/diseno.png" height="130" alt="Prototipos interactivos">
+                    <h3>Prototipos interactivos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+        </section>
+        <!-- section procesos -->
+        <section id="features2">
+            <div class="feature2-content">
+                <h2>Co-creamos juntos el mejor flujo de trabajo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="feature2-image">
+                <img src="../imagenes/UXUI design/representation-user-experience-interface-design (1).png" width="560" height="315" alt="">
+            </div>
+        </section>
+            <!-- contactos -->
+            <div id="contact">
+                <div class="contact-info">
+                    <h2 class="contact-title">Contáctenos</h2>
+                    <p>
+                        Lorem ipsum sit amet, consectetur adipscing elit. <br>
+                        Nunc maximus, nulla ut commodo sagittis, <br>
+                        sapien dui. Lorem ipsum 
+                    </p>
+                    <strong>Llamenos</strong>
+                    <p><i class="fa-solid fa-phone"></i> +51 123 456 789</p>
+                    <strong>E-mail</strong>
+                    <p><i class="fa-regular fa-envelope"></i> info@digitalperu.com</p>
+                    <strong>Direccion</strong>
+                    <p><i class="fa-solid fa-location-dot"></i> Lima, Perú</p>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <form class="contact-form" method="get">
+                            <div>
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name"  placeholder="Nombre" required>
+                            </div>
+                            <div>
+                                <label for="institucion">Institución</label>
+                                <input type="text" name="institucion" placeholder="Institución" required>
+                            </div>
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" placeholder="Email" required>
+
+                                <label for="celular">Celular</label>
+                                <input type="tel" name="celular" placeholder="Celular" required>
+                            </div>
+                            
+                            <div>
+                                <label for="service">Servicio</label>
+                                <select id="service" required>
+                                    <option value="" disabled selected>Servicio</option>
+                                    <option value="desarrollo">Desarrollo a medida</option>
+                                    <option value="consultoria">Consultoría tecnológica</option>
+                                    <option value="uxui">UX/UI Design</option>
+                                </select>
+                            </div>
+
+                            <label for="message">Mensaje</label>
+                            <textarea placeholder="Mensaje" required></textarea>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="../imagenes/home/Isologo.png" alt="">
+           
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="../paginas/index.html">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="../paginas/projects.html">Proyectos</a></li>
+                <li><a href="../paginas/equipo.html">Nosotros</a></li>
+                <li><a href="#contact">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href=https://www.facebook.com/aperturesoft><img src="../imagenes/home/facebook.png" alt="" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/code.enmicole/"><img src="../imagenes/home/instagram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://www.linkedin.com/company/singularity-university/"><img src="../imagenes/home/linkedin.png" alt="" width="30px" height="30px"></a>
+            <a href="http://Github.com/almircoo"><img src="../imagenes/home/github.png" alt="" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/@unity"><img src="../imagenes/home/youtube.png" alt="" width="30px" height="30px"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 <span>DigitalPeru</span>. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="https://www.canvia.com/desarrollo-aplicaciones-moviles/">Términos y condiciones</a>
+                <a href="https://www.canvia.com/desarrollo-aplicaciones-moviles/">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="https://kit.fontawesome.com/d606276ff0.js" crossorigin="anonymous"></script>
+</body>
+</html>
