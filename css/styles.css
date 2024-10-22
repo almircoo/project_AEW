@@ -934,7 +934,10 @@ input {
 .separado {
     width: 45%;
 }
-
+.cotiza-button{
+    display: flex;
+    justify-content: center;
+}
 .button-cotiza {
     width: 50%;
     background-color: #83c43b;
