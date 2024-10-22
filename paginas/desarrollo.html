@@ -121,37 +121,33 @@
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <form class="contact-form" method="get">
-                            <div>
-                                <label for="name">Nombre</label>
-                                <input type="text" name="name"  placeholder="Nombre" required>
+                        <form class="contact-form">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name"  placeholder="Nombre" required>
+                            <label for="institucion">Institución</label>
+                            <input type="text" name="institucion" placeholder="Institución" required>
+                            <div class="form-row">
+                                <div class="form-group separado">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" placeholder="E-mail">
+                                </div>
+        
+                                <div class="form-group separado">
+                                    <label for="celular">Celular</label>
+                                    <input type="text" id="celular" placeholder="Número de celular">
+                                </div>
                             </div>
-                            <div>
-                                <label for="institucion">Institución</label>
-                                <input type="text" name="institucion" placeholder="Institución" required>
-                            </div>
-                            <div>
-                                <label for="email">E-mail</label>
-                                <input type="email" name="email" placeholder="Email" required>
-
-                                <label for="celular">Celular</label>
-                                <input type="tel" name="celular" placeholder="Celular" required>
-                            </div>
-                            
-                            <div>
-                                <label for="service">Servicio</label>
-                                <select id="service" required>
-                                    <option value="" disabled selected>Servicio</option>
-                                    <option value="desarrollo">Desarrollo a medida</option>
-                                    <option value="consultoria">Consultoría tecnológica</option>
-                                    <option value="uxui">UX/UI Design</option>
-                                </select>
-                            </div>
-
+                            <select required style="background-color: #f9f9f9;">
+                                <option value="" disabled selected>Servicio</option>
+                                <option value="desarrollo">Desarrollo a medida</option>
+                                <option value="consultoria">Consultoría tecnológica</option>
+                                <option value="uxui">UX/UI Design</option>
+                            </select>
                             <label for="message">Mensaje</label>
                             <textarea placeholder="Mensaje" required></textarea>
-
-                            <button type="submit">Enviar</button>
+                            <div class="c-button">
+                                <button type="submit">Enviar</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -188,6 +184,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- vuelve al top -->
+    <button id="back-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
     <script src="../js/script.js"></script>
     <script src="https://kit.fontawesome.com/d606276ff0.js" crossorigin="anonymous"></script>
 </body>
